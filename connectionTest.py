@@ -24,9 +24,11 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    test()
     print(message.content)
     
-
+def test():
+    print("This is a test")
 
 
 client.run(TOKEN)
